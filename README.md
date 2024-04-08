@@ -145,9 +145,11 @@ class RoleLoader implements FixtureInterface
 ## Ordering fixtures
 
 Fixtures can we ordered using 2 methods :
- - by order
- - by dependencies
 
-Please reffer to this link for further details on ordering fixtures: 
+- by order
+- by dependencies
+
+Please refer to this link for further details on ordering fixtures:
+
 
 https://www.doctrine-project.org/projects/doctrine-data-fixtures/en/latest/how-to/fixture-ordering.html#fixture-ordering
