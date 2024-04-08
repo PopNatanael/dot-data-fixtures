@@ -151,5 +151,4 @@ Fixtures can we ordered using 2 methods :
 
 Please refer to this link for further details on ordering fixtures:
 
-
 https://www.doctrine-project.org/projects/doctrine-data-fixtures/en/latest/how-to/fixture-ordering.html#fixture-ordering
