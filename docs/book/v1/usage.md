@@ -28,7 +28,7 @@ When creating a new fixture we have 2 requirements :
 - Fixtures should implement `FixtureInterface` and have a `load` method.
 - Create a new php file and copy the below code-block.
   
-### Example:
+### Example
 
     <?php
     

@@ -10,7 +10,7 @@ In `doctrine.global.php` (or your custom doctrine config file) add a new key `fi
 
 Make sure the path is valid before proceeding to the next step.
 
-### Example:
+### Example
 
     return [
         'dependencies' => [ ... ],
