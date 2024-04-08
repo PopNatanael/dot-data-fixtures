@@ -17,13 +17,16 @@ This package provides a CLI interface for interacting with doctrine/data-fixture
 
 **Executing fixtures will **append** data to the tables.**
 
-### Requirements
+## Requirements
+
 - PHP >= 8.1
+
 - doctrine/data-fixtures => 1.5
 
 ## Installation
 
 Run the following command in you project directory
+
 ```bash
 $ composer require dotkernel/dot-data-fixtures
 ```
@@ -37,8 +40,9 @@ array, the value should be a valid path to a folder where your fixtures can be f
 
 **Make sure the path is valid before proceeding to the next step.**
 
-#### Example :
-```
+### Example:
+
+```php
 return [
     'dependencies' => [ ... ],
     'doctrine' => [
@@ -78,6 +82,7 @@ ConsoleRunner::run(
 ## Usage
 
 **List fixtures command** - will list all the available fixtures, by order of execution.
+
 ````bash
 php bin/doctrine fixtures:list
 ````
