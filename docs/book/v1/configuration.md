@@ -1,6 +1,6 @@
 # Configuration
 
-### Register ConfigProvider
+## Register ConfigProvider
 
 After installation, register the package's ConfigProvider into your application config.
 
@@ -10,7 +10,7 @@ In `doctrine.global.php` (or your custom doctrine config file) add a new key `fi
 
 Make sure the path is valid before proceeding to the next step.
 
-## Example :
+### Example
 
     return [
         'dependencies' => [ ... ],
@@ -20,7 +20,7 @@ Make sure the path is valid before proceeding to the next step.
         ],
     ];
 
-### Registering commands
+## Registering commands
 
 The last step is to register the commands. We can register the commands to work with the default CLI that doctrine provides us. Create a new php file `bin/doctrine` (if you don't already have this file feel free to copy it from the below example)
 
