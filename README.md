@@ -8,7 +8,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/dotkernel/dot-data-fixtures)](https://github.com/dotkernel/dot-data-fixtures/stargazers)
 [![GitHub license](https://img.shields.io/github/license/dotkernel/dot-data-fixtures)](https://github.com/dotkernel/dot-data-fixtures/blob/1.0/LICENSE)
 
-[![Build Static](https://github.com/dotkernel/dot-data-fixtures/actions/workflows/static-analysis.yml/badge.svg?branch=1.0)](https://github.com/dotkernel/dot-data-fixtures/actions/workflows/static-analysis.yml)
+[![Build Static](https://github.com/dotkernel/dot-data-fixtures/actions/workflows/continuous-integration.yml/badge.svg?branch=1.0)](https://github.com/dotkernel/dot-data-fixtures/actions/workflows/continuous-integration.yml)
 [![codecov](https://codecov.io/gh/dotkernel/dot-data-fixtures/graph/badge.svg?token=PGOXZOZAB0)](https://codecov.io/gh/dotkernel/dot-data-fixtures)
 
 [![SymfonyInsight](https://insight.symfony.com/projects/6bac345c-9548-47ec-ab4a-25773a98ed03/big.svg)](https://insight.symfony.com/projects/6bac345c-9548-47ec-ab4a-25773a98ed03)
@@ -17,13 +17,15 @@ This package provides a CLI interface for interacting with doctrine/data-fixture
 
 **Executing fixtures will **append** data to the tables.**
 
-### Requirements
+## Requirements
+
 - PHP >= 8.1
 - doctrine/data-fixtures => 1.5
 
 ## Installation
 
 Run the following command in you project directory
+
 ```bash
 $ composer require dotkernel/dot-data-fixtures
 ```
@@ -37,8 +39,9 @@ array, the value should be a valid path to a folder where your fixtures can be f
 
 **Make sure the path is valid before proceeding to the next step.**
 
-#### Example :
-```
+### Example
+
+```php
 return [
     'dependencies' => [ ... ],
     'doctrine' => [
@@ -78,30 +81,34 @@ ConsoleRunner::run(
 ## Usage
 
 **List fixtures command** - will list all the available fixtures, by order of execution.
+
 ````bash
 php bin/doctrine fixtures:list
 ````
 
 **Execute fixtures command** - this command will execute all or one fixture.
+
 - To execute all the fixtures run :
+
 ```bash
 php bin/doctrine fixtures:execute
 ```
 
 - To execute a specific fixture run :
+
 ```bash
 php bin/doctrine fixtures:execute --class=RoleLoader
 ```
 
-
 ## Creating fixtures
 
 When creating a new fixture we have 2 requirements :
+
 - Fixtures should be created in the folder we configured earlier. ``data/doctrine/fixtures``
 - Fixtures should implement ``FixtureInterface`` and have a ``load`` method.
 - Create a new php file and copy the below code-block.
 
-#### Example :
+### Example
 
 ```php
 <?php
@@ -138,9 +145,10 @@ class RoleLoader implements FixtureInterface
 ## Ordering fixtures
 
 Fixtures can we ordered using 2 methods :
- - by order
- - by dependencies
 
-Please reffer to this link for further details on ordering fixtures: 
+- by order
+- by dependencies
+
+Please refer to this link for further details on ordering fixtures:
 
 https://www.doctrine-project.org/projects/doctrine-data-fixtures/en/latest/how-to/fixture-ordering.html#fixture-ordering
