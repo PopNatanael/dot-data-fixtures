@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": "~8.2.0 || ~8.3.0",
-        "doctrine/data-fixtures": "^1.5",
+        "doctrine/data-fixtures": "^1.7",
         "doctrine/orm": "*",
         "symfony/console": "^7.0"
     },
